@@ -1,4 +1,5 @@
 global using dotnet_jumpstart.Models;
+using dotnet_jumpstart.Services.CharacterService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+
+builder.Services.AddScoped<ICharacterService, CharacterService>();
 
 var app = builder.Build();
 

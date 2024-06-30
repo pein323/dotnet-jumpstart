@@ -1,5 +1,3 @@
-using dotnet_jumpstart;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_jumpstart.Controllers
