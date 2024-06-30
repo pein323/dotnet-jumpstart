@@ -8,8 +8,8 @@ namespace dotnet_jumpstart.Controllers
     {
         private static readonly Character knight = new();
 
-[HttpGet]
-        public IActionResult Get()
+        [HttpGet]
+        public ActionResult<Character> Get()
         {
             return Ok(knight);
         }
