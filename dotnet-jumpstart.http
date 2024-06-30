@@ -1,0 +1,6 @@
+@dotnet_jumpstart_HostAddress = http://localhost:5226
+
+GET {{dotnet_jumpstart_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
